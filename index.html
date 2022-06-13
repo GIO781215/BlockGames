@@ -27,11 +27,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/aaaaa.loader.js";
+      var loaderUrl = buildUrl + "/temp.loader.js";
       var config = {
-        dataUrl: buildUrl + "/aaaaa.data.gz",
-        frameworkUrl: buildUrl + "/aaaaa.framework.js.gz",
-        codeUrl: buildUrl + "/aaaaa.wasm.gz",
+        dataUrl: buildUrl + "/temp.data",
+        frameworkUrl: buildUrl + "/temp.framework.js",
+        codeUrl: buildUrl + "/temp.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Cube Game",
@@ -53,8 +53,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "600px";
+        canvas.style.height = "900px";
       }
       loadingBar.style.display = "block";
 
